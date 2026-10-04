@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Какая подработка подойдёт именно мне?</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;600;800&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <section id="start">
+      <h1>Какая подработка подойдёт <mark>именно тебе?</mark></h1>
+      <p class="lead">Три коротких вопроса для студентки, которая знает английский. В конце получишь подходящий вариант и первые шаги.</p>
+      <button class="btn" id="go" type="button">Начать</button>
+    </section>
+
+    <section id="quiz" class="card" hidden>
+      <div class="bar"><i id="prog"></i></div>
+      <h2 id="q"></h2>
+      <div id="opts"></div>
+    </section>
+
+    <section id="result" class="card res" hidden>
+      <p class="kicker">Тебе подходит:</p>
+      <h2 id="res-title"></h2>
+      <p id="res-desc"></p>
+      <h3>Первые шаги</h3>
+      <ul id="res-steps"></ul>
+      <p class="also" id="res-also"></p>
+      <div class="row">
+        <button class="btn" id="again" type="button">Пройти ещё раз</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
